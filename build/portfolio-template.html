@@ -1,9 +1,16 @@
-<title>GeriBuild</title>
+<title>GeriBuild — Custom Apps, Dashboards &amp; Automation</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Custom software built to order by Geri — beautiful apps, dashboards and automation for real businesses. 9 shipped products, 5 live in production.">
 <meta property="og:title" content="GeriBuild — Software Built to Order">
 <meta property="og:description" content="Custom apps, dashboards and automation for real businesses. 9 shipped products, 5 live in production.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://geribuild.onrender.com/">
+<meta property="og:image" content="https://geribuild.onrender.com/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://geribuild.onrender.com/og.jpg">
+<link rel="canonical" href="https://geribuild.onrender.com/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23FF6E5F'/%3E%3Cstop offset='1' stop-color='%23FF4D8F'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='%230A0C13'/%3E%3Ctext x='32' y='44' font-family='Arial Black,Arial' font-size='34' font-weight='900' text-anchor='middle' fill='url(%23g)'%3EG.%3C/text%3E%3C/svg%3E">
 <script type="application/ld+json">
 {
@@ -45,7 +52,7 @@
     --edge-bright:rgba(151,168,214,.28);
     --ink:#EEF1F9;
     --dim:#9BA3B8;
-    --faint:#636C82;
+    --faint:#7F89A1;
     --brand-a:#FF6E5F;
     --brand-b:#FF4D8F;
     --emerald:#2DD4A0;
@@ -185,6 +192,7 @@
     font-variant-numeric:tabular-nums;
   }
   .stat .l{color:var(--dim);font-size:13.5px;margin-top:8px}
+  @media (max-width:760px){.stat .n{font-size:38px}}
 
   /* ---------- section heads ---------- */
   .sec{padding:30px 0 90px}
@@ -278,54 +286,13 @@
   }
   .feat-card:hover .shot-frame{transform:rotate(-.5deg) scale(1.02)}
   .shot-frame img{display:block;width:100%;height:auto}
+  .shot-frame.tall{max-width:340px}
 
-  /* ----- mockup: browser (Mekaniku) ----- */
-  .browser{
-    width:100%;max-width:360px;background:#0D1119;border:1px solid var(--edge-bright);border-radius:16px;
-    overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.55);transform:rotate(2deg);transition:transform .3s;
-  }
-  .feat-card:hover .browser{transform:rotate(.5deg) scale(1.02)}
+  /* ----- browser bar on screenshots ----- */
   .b-bar{display:flex;align-items:center;gap:6px;padding:10px 12px;border-bottom:1px solid var(--edge);background:#101522}
   .b-bar i{width:9px;height:9px;border-radius:50%;font-style:normal}
   .b-bar i:nth-child(1){background:#FF5F57}.b-bar i:nth-child(2){background:#FEBC2E}.b-bar i:nth-child(3){background:#28C840}
   .b-bar .url{font-family:var(--mono);font-size:9.5px;color:var(--faint);background:var(--panel);border-radius:99px;padding:3px 12px;margin-left:8px}
-  .b-body{padding:16px}
-  .plate{
-    display:flex;align-items:center;gap:10px;background:var(--panel);border:1px solid var(--edge-bright);
-    border-radius:10px;padding:9px 12px;margin-bottom:14px;
-  }
-  .plate .badge{font-family:var(--mono);font-weight:500;font-size:11px;background:var(--amber);color:#221503;border-radius:4px;padding:2px 8px;letter-spacing:.08em}
-  .plate span{font-size:11.5px;color:var(--dim)}
-  .ord{border:1px solid var(--edge);border-radius:12px;padding:12px 14px}
-  .ord .oh{display:flex;justify-content:space-between;font-size:12px;color:var(--ink);font-weight:600;margin-bottom:8px}
-  .ord .oh em{font-style:normal;color:var(--amber);font-family:var(--mono);font-size:10px}
-  .ln{display:flex;justify-content:space-between;font-size:11.5px;color:var(--dim);padding:5px 0;border-top:1px dashed var(--edge)}
-  .ln b{font-family:var(--mono);font-weight:400;font-size:10.5px;color:var(--dim);font-variant-numeric:tabular-nums}
-  .ln.tot{border-top:1px solid var(--edge-bright);color:var(--ink);font-weight:600;margin-top:4px}
-  .ln.tot b{color:var(--amber);font-weight:500}
-  .print{margin-top:12px;text-align:center;font-family:var(--display);font-weight:700;font-size:12.5px;color:#221503;background:var(--amber);border-radius:9px;padding:8px}
-
-  /* ----- mockup: ops panel (Dashboard) ----- */
-  .ops{
-    width:100%;max-width:380px;background:#0D1119;border:1px solid var(--edge-bright);border-radius:16px;
-    padding:16px;box-shadow:0 30px 70px rgba(0,0,0,.55);transform:rotate(-2deg);transition:transform .3s;
-  }
-  .feat-card:hover .ops{transform:rotate(-.5deg) scale(1.02)}
-  .ops .oh2{font-family:var(--mono);font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);margin-bottom:12px;display:flex;justify-content:space-between}
-  .ops .oh2 b{color:var(--emerald);font-weight:500}
-  .tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px}
-  .tile{background:var(--panel);border:1px solid var(--edge);border-radius:10px;padding:10px}
-  .tile .v{font-family:var(--display);font-weight:800;font-size:17px;color:var(--ink);font-variant-numeric:tabular-nums}
-  .tile .v.c{color:var(--cyan)}
-  .tile .v.warn{color:var(--amber)}
-  .tile .k{font-size:9.5px;color:var(--faint);letter-spacing:.04em}
-  .grid-pc{display:grid;grid-template-columns:repeat(12,1fr);gap:5px;margin-bottom:12px}
-  .pc{aspect-ratio:1;border-radius:3px;background:#28324A}
-  .pc.on{background:var(--cyan);box-shadow:0 0 6px rgba(76,195,255,.6)}
-  .pc.use{background:var(--emerald)}
-  .pc.err{background:#FF5F6B;box-shadow:0 0 6px rgba(255,95,107,.7)}
-  .alert-ln{font-family:var(--mono);font-size:9.5px;color:var(--dim);border:1px dashed var(--edge-bright);border-radius:8px;padding:7px 10px}
-  .alert-ln b{color:#FF7B8A;font-weight:500}
 
   /* ---------- more builds ---------- */
   .mini-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:34px}
@@ -373,6 +340,13 @@
   .mini p{color:var(--dim);font-size:14.5px}
   .mini-link{display:inline-block;margin-top:12px;font-family:var(--display);font-weight:700;font-size:14.5px;color:var(--ac);text-decoration:none}
   .mini-link:hover{text-decoration:underline;text-underline-offset:4px}
+
+  /* ---------- about ---------- */
+  .about{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:start}
+  @media (max-width:860px){.about{grid-template-columns:1fr;gap:18px}}
+  .about-text p{color:var(--dim);font-size:17.5px;margin-bottom:16px}
+  .about-text p:last-child{margin-bottom:0}
+  .about-text strong{color:var(--ink);font-weight:600}
 
   /* ---------- services ---------- */
   .svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:34px}
@@ -470,6 +444,7 @@
     <div class="nav-links">
       <a href="#work">Work</a>
       <a href="#services">Services</a>
+      <a href="#about">About</a>
       <a href="#contact">Contact</a>
       <a class="pill" href="mailto:gerisaranda1@gmail.com?subject=Project%20inquiry">Start a project</a>
     </div>
@@ -496,7 +471,7 @@
     <div class="collage" aria-hidden="true">
       <div class="fl fl-1 stagger s3">
         <div class="t">This month</div>
-        <div class="fl-num">45 200 L</div>
+        <div class="fl-num">€3,180</div>
         <div class="fl-lbl">spending tracked</div>
         <svg class="spark" viewBox="0 0 100 36" preserveAspectRatio="none">
           <polygon class="fill" points="0,30 14,24 28,27 42,16 56,20 70,10 84,14 100,4 100,36 0,36"/>
@@ -508,7 +483,7 @@
         <div class="row"><span>PC-07 · CS2</span><b class="ok">in use</b></div>
         <div class="row"><span>PC-12 · Valorant</span><b class="ok">in use</b></div>
         <div class="row"><span>PC-14</span><b>free</b></div>
-        <div class="row"><span>Revenue today</span><b>18 400 L</b></div>
+        <div class="row"><span>Revenue today</span><b>€1,842</b></div>
       </div>
       <div class="fl fl-3 stagger s5">
         <div class="t">GamesUpdater bot</div>
@@ -523,13 +498,13 @@
     <div class="stat reveal"><div class="n" data-count="9">0</div><div class="l">Products shipped end-to-end</div></div>
     <div class="stat reveal"><div class="n" data-count="5">0</div><div class="l">Live in production right now</div></div>
     <div class="stat reveal"><div class="n" data-count="25" data-suffix="+">0</div><div class="l">Cafés on nightly autopilot</div></div>
-    <div class="stat reveal"><div class="n" data-count="4">0</div><div class="l">Languages supported</div></div>
+    <div class="stat reveal"><div class="n" data-count="7400" data-suffix="+">0</div><div class="l">Game checks a week</div></div>
   </div>
 
   <section class="sec" id="work">
     <p class="sec-eyebrow reveal">Selected work</p>
     <h2 class="reveal">Real products, running real businesses.</h2>
-    <p class="lead-in reveal">Not mockups — every screen below is a product I designed, built, shipped and still maintain.</p>
+    <p class="lead-in reveal">Real products, not concepts — I designed, built and shipped every one. Screens use demo data, so no customer's details appear here.</p>
 
     <!-- GamesUpdater -->
     <article class="feat-card reveal" style="--glow:rgba(167,139,250,.13);--ac:var(--violet);--ac-soft:rgba(167,139,250,.15);--gx:20%">
@@ -593,23 +568,13 @@
         </ul>
         <div class="fc-meta">
           <span class="stack">Node · MongoDB · uPlot</span>
-          <a href="https://dashboard-ws99.onrender.com" target="_blank" rel="noopener">Live dashboard ↗</a>
+          <a href="mailto:gerisaranda1@gmail.com?subject=Caf%C3%A9%20Ops%20demo">Ask for a demo →</a>
         </div>
       </div>
       <div class="fc-shot">
-        <div class="ops">
-          <div class="oh2"><span>WS99 · Overview</span><b>● online</b></div>
-          <div class="tiles">
-            <div class="tile"><div class="v">18 400</div><div class="k">Revenue today</div></div>
-            <div class="tile"><div class="v c">22/26</div><div class="k">Stations up</div></div>
-            <div class="tile"><div class="v warn">1</div><div class="k">Open alert</div></div>
-          </div>
-          <div class="grid-pc">
-            <i class="pc use"></i><i class="pc use"></i><i class="pc on"></i><i class="pc use"></i><i class="pc on"></i><i class="pc use"></i><i class="pc use"></i><i class="pc on"></i><i class="pc use"></i><i class="pc use"></i><i class="pc on"></i><i class="pc use"></i>
-            <i class="pc on"></i><i class="pc use"></i><i class="pc use"></i><i class="pc err"></i><i class="pc on"></i><i class="pc use"></i><i class="pc on"></i><i class="pc use"></i><i class="pc use"></i><i class="pc on"></i><i class="pc use"></i><i class="pc on"></i>
-            <i class="pc use"></i><i class="pc on"></i><i class="pc use"></i><i class="pc use"></i><i class="pc"></i><i class="pc"></i><i class="pc on"></i><i class="pc use"></i><i class="pc on"></i><i class="pc use"></i><i class="pc"></i><i class="pc"></i>
-          </div>
-          <div class="alert-ln"><b>⚠ PC-14 offline 22:41</b> → Telegram alert sent to owner</div>
+        <div class="shot-frame">
+          <div class="b-bar"><i></i><i></i><i></i><span class="url">Café Ops · demo data</span></div>
+          <img src="data:image/jpeg;base64,__B64_CAFESHOT__" alt="Café Ops — the real dashboard showing stations in use and today's revenue, on demo data" loading="lazy">
         </div>
       </div>
     </article>
@@ -617,19 +582,9 @@
     <!-- Mekaniku -->
     <article class="feat-card reveal" style="--glow:rgba(255,180,84,.12);--ac:var(--amber);--ac-soft:rgba(255,180,84,.14)">
       <div class="fc-shot">
-        <div class="browser">
-          <div class="b-bar"><i></i><i></i><i></i><span class="url">mekaniku-lovat.vercel.app</span></div>
-          <div class="b-body">
-            <div class="plate"><span class="badge">AA 123 GB</span><span>Mercedes C220 · 2019</span></div>
-            <div class="ord">
-              <div class="oh">Urdhër riparimi #142 <em>HAPUR</em></div>
-              <div class="ln"><span>Ndërrim vaji + filtër</span><b>2 500 L</b></div>
-              <div class="ln"><span>Disqe frenash (palë)</span><b>7 800 L</b></div>
-              <div class="ln"><span>Punë dore · 1.5 h</span><b>3 000 L</b></div>
-              <div class="ln tot"><span>Totali</span><b>13 300 L</b></div>
-            </div>
-            <div class="print">🖨 Printo urdhrin</div>
-          </div>
+        <div class="shot-frame tall">
+          <div class="b-bar"><i></i><i></i><i></i><span class="url">Mekaniku · demo data</span></div>
+          <img src="data:image/jpeg;base64,__B64_MEKSHOT__" alt="Mekaniku — the real repair order screen with labour, parts and total, on demo data" loading="lazy">
         </div>
       </div>
       <div class="fc-info">
@@ -643,7 +598,7 @@
         </ul>
         <div class="fc-meta">
           <span class="stack">React · TypeScript · Supabase</span>
-          <a href="https://mekaniku-lovat.vercel.app" target="_blank" rel="noopener">Try it live ↗</a>
+          <a href="mailto:gerisaranda1@gmail.com?subject=Mekaniku%20demo">Ask for a demo →</a>
         </div>
       </div>
     </article>
@@ -688,12 +643,12 @@
       </div>
       <div class="mini has-media reveal" style="--ac:var(--emerald)">
         <div class="mini-media tos" role="img" aria-label="TransformOS dashboard: today's score ring and stat tiles">
-          <div class="tos-ring"><b>0</b><span>/ 5</span><em>TODAY'S SCORE</em></div>
+          <div class="tos-ring"><b>4</b><span>/ 5</span><em>TODAY'S SCORE</em></div>
           <div class="tos-tiles">
-            <div style="--tc:#B4F03C"><span>Streak</span><b>0</b> <i>days</i></div>
-            <div style="--tc:#A78BFA"><span>Weekly</span><b>0/35</b></div>
-            <div style="--tc:#4CC3FF"><span>Monthly</span><b>0%</b></div>
-            <div style="--tc:#FF8A4C"><span>Weight</span><b>95</b> <i>kg</i></div>
+            <div style="--tc:#B4F03C"><span>Streak</span><b>12</b> <i>days</i></div>
+            <div style="--tc:#A78BFA"><span>Weekly</span><b>27/35</b></div>
+            <div style="--tc:#4CC3FF"><span>Monthly</span><b>78%</b></div>
+            <div style="--tc:#FF8A4C"><span>Weight</span><b>89</b> <i>kg</i></div>
           </div>
         </div>
         <span class="mtag">Health PWA · Private build</span>
@@ -744,6 +699,19 @@
         <div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.8 2.6 4.2 5.6 4.2 9S14.8 18.4 12 21c-2.8-2.6-4.2-5.6-4.2-9S9.2 5.6 12 3z"/></svg></div>
         <h3>Websites that win customers</h3>
         <p>Fast, multilingual marketing sites with real design — built to load instantly and turn visitors into phone calls.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="about">
+    <div class="about">
+      <div>
+        <p class="sec-eyebrow reveal">Who you'd work with</p>
+        <h2 class="reveal">One developer, start to finish.</h2>
+      </div>
+      <div class="about-text reveal">
+        <p>I'm Geri. I design, build, deploy and maintain everything on this page myself — <strong>the person you talk to is the person writing the code</strong>. Nothing gets passed to a team you never meet.</p>
+        <p>Much of my work runs in gaming cafés, where a failed update means lost customers by evening. That's why my software assumes bad connections, old PCs and busy staff — and says in plain words when it needs you.</p>
       </div>
     </div>
   </section>
@@ -802,8 +770,6 @@
     <span>
       <a href="https://gamesupdater.com" target="_blank" rel="noopener">GAMESUPDATER</a> ·
       <a href="https://www.portofoli.al" target="_blank" rel="noopener">PORTOFOLI</a> ·
-      <a href="https://mekaniku-lovat.vercel.app" target="_blank" rel="noopener">MEKANIKU</a> ·
-      <a href="https://dashboard-ws99.onrender.com" target="_blank" rel="noopener">CAFÉ OPS</a> ·
       <a href="https://ariahvac.al" target="_blank" rel="noopener">ARIA HVAC</a>
     </span>
     <span>ALL WORK BY REQUEST · <span id="yr">2026</span></span>
@@ -824,12 +790,12 @@
   function countUp(el) {
     var target = parseInt(el.getAttribute('data-count'), 10);
     var suffix = el.getAttribute('data-suffix') || '';
-    if (reduced) { el.textContent = target + suffix; return; }
+    if (reduced) { el.textContent = target.toLocaleString('en-US') + suffix; return; }
     var t0 = null, dur = 900;
     function tick(t) {
       if (!t0) t0 = t;
       var p = Math.min((t - t0) / dur, 1);
-      el.textContent = Math.round(target * (1 - Math.pow(1 - p, 3))) + suffix;
+      el.textContent = Math.round(target * (1 - Math.pow(1 - p, 3))).toLocaleString('en-US') + suffix;
       if (p < 1) requestAnimationFrame(tick);
     }
     requestAnimationFrame(tick);

@@ -16,6 +16,8 @@ BEGIN{
     FATURASHOT=> slurp("build/shots/fatura.jpg.b64"),
     PCBOARDSHOT=> slurp("build/shots/pcboard.jpg.b64"),
     GUSHOT    => slurp("build/shots/gamesupdater.jpg.b64"),
+    CAFESHOT  => slurp("build/shots/cafeops.jpg.b64"),
+    MEKSHOT   => slurp("build/shots/mekaniku.jpg.b64"),
   );
 }
 s/__B64_(\w+)__/$m{$1}/ge;

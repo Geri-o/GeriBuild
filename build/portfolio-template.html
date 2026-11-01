@@ -327,25 +327,6 @@
   .alert-ln{font-family:var(--mono);font-size:9.5px;color:var(--dim);border:1px dashed var(--edge-bright);border-radius:8px;padding:7px 10px}
   .alert-ln b{color:#FF7B8A;font-weight:500}
 
-  /* ----- mockup: telegram (GameUpdater) ----- */
-  .tg{
-    width:100%;max-width:340px;background:#0D1119;border:1px solid var(--edge-bright);border-radius:16px;
-    overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.55);transform:rotate(2deg);transition:transform .3s;
-  }
-  .feat-card:hover .tg{transform:rotate(.5deg) scale(1.02)}
-  .tg-head{display:flex;align-items:center;gap:10px;padding:12px 14px;background:#101522;border-bottom:1px solid var(--edge)}
-  .tg-av{width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,var(--violet),#6D5AE0);display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:13px;color:#fff}
-  .tg-head .nm2{font-size:13px;font-weight:600;color:var(--ink);line-height:1.2}
-  .tg-head .st{font-size:10.5px;color:var(--emerald)}
-  .tg-body{padding:14px;display:flex;flex-direction:column}
-  .msg{border-radius:13px;padding:8px 12px;font-size:11.5px;line-height:1.5;margin-bottom:8px;max-width:88%}
-  .msg.me{align-self:flex-end;background:rgba(167,139,250,.2);border:1px solid rgba(167,139,250,.4);color:var(--ink);font-family:var(--mono);font-size:11px}
-  .msg.bot{align-self:flex-start;background:var(--panel);border:1px solid var(--edge);color:var(--dim)}
-  .msg.bot b{color:var(--ink);font-weight:600}
-  .msg .ok2{color:var(--emerald)}
-  .msg .wr{color:var(--amber)}
-  .tg-time{align-self:center;font-family:var(--mono);font-size:9px;color:var(--faint);letter-spacing:.1em;margin-top:2px}
-
   /* ---------- more builds ---------- */
   .mini-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:34px}
   @media (max-width:760px){.mini-grid{grid-template-columns:1fr}}
@@ -568,19 +549,10 @@
         </div>
       </div>
       <div class="fc-shot">
-        <div class="tg">
-          <div class="tg-head">
-            <div class="tg-av">G</div>
-            <div><div class="nm2">GamesUpdater Bot</div><div class="st">online</div></div>
-          </div>
-          <div class="tg-body">
-            <div class="msg me">/update all</div>
-            <div class="msg bot">🌙 <b>03:00</b> — updating 11 launchers…</div>
-            <div class="msg bot"><span class="ok2">✅ Steam</span> · CS2 → build 14203<br><span class="ok2">✅ Riot</span> · League patched<br><span class="ok2">✅ Battle.net</span> · OW2 patched</div>
-            <div class="msg bot"><span class="wr">⚠ One game needs you</span> — <b>here's exactly what to do.</b></div>
-            <div class="tg-time">03:47 · REPORT SENT</div>
-          </div>
-        </div>
+        <a class="shot-frame" href="https://gamesupdater.com" target="_blank" rel="noopener" aria-label="Open gamesupdater.com">
+          <div class="b-bar"><i></i><i></i><i></i><span class="url">gamesupdater.com</span></div>
+          <img src="data:image/jpeg;base64,__B64_GUSHOT__" alt="GamesUpdater — the real owner control panel showing every launcher's status, on demo data" loading="lazy">
+        </a>
       </div>
     </article>
 

@@ -14,6 +14,7 @@ BEGIN{
     GOLDTHUMB => slurp("build/shots/gold-thumb-small.jpg.b64"),
     ARIASHOT  => slurp("build/shots/aria.jpg.b64"),
     FATURASHOT=> slurp("build/shots/fatura.jpg.b64"),
+    PCBOARDSHOT=> slurp("build/shots/pcboard.jpg.b64"),
   );
 }
 s/__B64_(\w+)__/$m{$1}/ge;

@@ -1,8 +1,8 @@
 <title>GeriBuild</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Custom software built to order by Geri — beautiful apps, dashboards and automation for real businesses. 8 shipped products, 4 live in production.">
+<meta name="description" content="Custom software built to order by Geri — beautiful apps, dashboards and automation for real businesses. 9 shipped products, 5 live in production.">
 <meta property="og:title" content="GeriBuild — Software Built to Order">
-<meta property="og:description" content="Custom apps, dashboards and automation for real businesses. 8 shipped products, 4 live in production.">
+<meta property="og:description" content="Custom apps, dashboards and automation for real businesses. 9 shipped products, 5 live in production.">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23FF6E5F'/%3E%3Cstop offset='1' stop-color='%23FF4D8F'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='%230A0C13'/%3E%3Ctext x='32' y='44' font-family='Arial Black,Arial' font-size='34' font-weight='900' text-anchor='middle' fill='url(%23g)'%3EG.%3C/text%3E%3C/svg%3E">
 <script type="application/ld+json">
@@ -243,8 +243,6 @@
     min-height:380px;
   }
   @media (max-width:860px){.fc-shot{order:-1;min-height:0;padding:34px 22px}}
-  .feat-card:nth-child(odd) .fc-shot{order:-1}
-  @media (max-width:860px){.feat-card:nth-child(odd) .fc-shot{order:-1}}
 
   /* ----- mockup: phone (Portofoli) ----- */
   .phone{
@@ -392,6 +390,8 @@
   .mini h3{font-family:var(--display);font-weight:800;font-size:22px;margin-bottom:6px;letter-spacing:-.015em}
   .mini .mtag{font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ac);display:block;margin-bottom:12px}
   .mini p{color:var(--dim);font-size:14.5px}
+  .mini-link{display:inline-block;margin-top:12px;font-family:var(--display);font-weight:700;font-size:14.5px;color:var(--ac);text-decoration:none}
+  .mini-link:hover{text-decoration:underline;text-underline-offset:4px}
 
   /* ---------- services ---------- */
   .svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:34px}
@@ -503,7 +503,7 @@
       <h1><span class="stagger s2">Software people</span><br><span class="stagger s3"><span class="g">love</span> to use.</span></h1>
       <p class="sub stagger s4">
         Custom apps, dashboards and automation for real businesses — <strong>designed to look
-        as good as they work</strong>. Eight shipped products, four live in production right now,
+        as good as they work</strong>. Nine shipped products, five live in production right now,
         all built end-to-end by one developer.
       </p>
       <div class="cta-row stagger s5">
@@ -530,18 +530,18 @@
         <div class="row"><span>Revenue today</span><b>18 400 L</b></div>
       </div>
       <div class="fl fl-3 stagger s5">
-        <div class="t">GameUpdater bot</div>
+        <div class="t">GamesUpdater bot</div>
         <div class="bub bub-out">/update all</div>
-        <div class="bub bub-in">🌙 03:00 — updating 4 launchers…</div>
+        <div class="bub bub-in">🌙 03:00 — updating 11 launchers…</div>
         <div class="bub bub-in">✅ Done. All games ready before opening.</div>
       </div>
     </div>
   </header>
 
   <div class="stats">
-    <div class="stat reveal"><div class="n" data-count="8">0</div><div class="l">Products shipped end-to-end</div></div>
-    <div class="stat reveal"><div class="n" data-count="4">0</div><div class="l">Live in production right now</div></div>
-    <div class="stat reveal"><div class="n" data-count="3">0</div><div class="l">Cafés on nightly autopilot</div></div>
+    <div class="stat reveal"><div class="n" data-count="9">0</div><div class="l">Products shipped end-to-end</div></div>
+    <div class="stat reveal"><div class="n" data-count="5">0</div><div class="l">Live in production right now</div></div>
+    <div class="stat reveal"><div class="n" data-count="25" data-suffix="+">0</div><div class="l">Cafés on nightly autopilot</div></div>
     <div class="stat reveal"><div class="n" data-count="4">0</div><div class="l">Languages supported</div></div>
   </div>
 
@@ -549,6 +549,40 @@
     <p class="sec-eyebrow reveal">Selected work</p>
     <h2 class="reveal">Real products, running real businesses.</h2>
     <p class="lead-in reveal">Not mockups — every screen below is a product I designed, built, shipped and still maintain.</p>
+
+    <!-- GamesUpdater -->
+    <article class="feat-card reveal" style="--glow:rgba(167,139,250,.13);--ac:var(--violet);--ac-soft:rgba(167,139,250,.15);--gx:20%">
+      <div class="fc-info">
+        <div class="fc-tags"><span class="tag hot">● Live — 25+ cafés</span><span class="tag">Automation</span><span class="tag">Commercial</span></div>
+        <h3>GamesUpdater</h3>
+        <p class="desc">Every night it updates every launcher on a café's game server — Steam, Riot, Battle.net, Epic, EA, Ubisoft and more — and reports to the owner's <strong>Telegram</strong> before opening time.</p>
+        <ul class="fc-feats">
+          <li>Proves each update by the installed version, not by whether the launcher looked busy</li>
+          <li>AI vision reads launcher screens and presses the right button where there's no API</li>
+          <li>Updates its own fleet — a bad build rolls itself back to the last good one</li>
+          <li>A recent week: 7,400+ game checks, 98% needing no one</li>
+        </ul>
+        <div class="fc-meta">
+          <span class="stack">PowerShell · Node · Postgres</span>
+          <a href="https://gamesupdater.com" target="_blank" rel="noopener">gamesupdater.com ↗</a>
+        </div>
+      </div>
+      <div class="fc-shot">
+        <div class="tg">
+          <div class="tg-head">
+            <div class="tg-av">G</div>
+            <div><div class="nm2">GamesUpdater Bot</div><div class="st">online</div></div>
+          </div>
+          <div class="tg-body">
+            <div class="msg me">/update all</div>
+            <div class="msg bot">🌙 <b>03:00</b> — updating 11 launchers…</div>
+            <div class="msg bot"><span class="ok2">✅ Steam</span> · CS2 → build 14203<br><span class="ok2">✅ Riot</span> · League patched<br><span class="ok2">✅ Battle.net</span> · OW2 patched</div>
+            <div class="msg bot"><span class="wr">⚠ One game needs you</span> — <b>here's exactly what to do.</b></div>
+            <div class="tg-time">03:47 · REPORT SENT</div>
+          </div>
+        </div>
+      </div>
+    </article>
 
     <!-- Portofoli -->
     <article class="feat-card reveal" style="--glow:rgba(45,212,160,.13);--ac:var(--emerald);--ac-soft:rgba(45,212,160,.14)">
@@ -565,7 +599,7 @@
         <ul class="fc-feats">
           <li>Auto-categorization that learns — correct “bukë” to Food once, it applies everywhere</li>
           <li>Shared household by link + QR, with comments, reactions and partner notifications</li>
-          <li>Bill reminders, budget warnings, beautiful reports</li>
+          <li>Bill reminders, budget warnings, beautiful reports with CSV export</li>
         </ul>
         <div class="fc-meta">
           <span class="stack">Node · MongoDB · Web Push</span>
@@ -612,7 +646,7 @@
     <article class="feat-card reveal" style="--glow:rgba(255,180,84,.12);--ac:var(--amber);--ac-soft:rgba(255,180,84,.14)">
       <div class="fc-shot">
         <div class="browser">
-          <div class="b-bar"><i></i><i></i><i></i><span class="url">mekaniku.app</span></div>
+          <div class="b-bar"><i></i><i></i><i></i><span class="url">mekaniku-lovat.vercel.app</span></div>
           <div class="b-body">
             <div class="plate"><span class="badge">AA 123 GB</span><span>Mercedes C220 · 2019</span></div>
             <div class="ord">
@@ -642,35 +676,25 @@
       </div>
     </article>
 
-    <!-- GameUpdater -->
-    <article class="feat-card reveal" style="--glow:rgba(167,139,250,.13);--ac:var(--violet);--ac-soft:rgba(167,139,250,.15);--gx:20%">
+    <!-- PcBoard -->
+    <article class="feat-card reveal" style="--glow:rgba(255,110,95,.12);--ac:var(--brand-a);--ac-soft:rgba(255,110,95,.14);--gx:20%">
       <div class="fc-info">
-        <div class="fc-tags"><span class="tag hot">● Sold — running at 3 cafés</span><span class="tag">Automation</span><span class="tag">Commercial</span></div>
-        <h3>GameUpdater</h3>
-        <p class="desc">Every night at 03:00 it updates Steam, Riot, Battle.net and Epic on café servers — and reports to the owner's <strong>Telegram</strong> before opening time.</p>
+        <div class="fc-tags"><span class="tag hot">● New — delivered</span><span class="tag">TV display</span><span class="tag">Single file</span></div>
+        <h3>PcBoard</h3>
+        <p class="desc">A wall-TV board that shows a whole gaming café at a glance — every PC on the real floor plan, free or busy, with <strong>the time left on each seat</strong>.</p>
         <ul class="fc-feats">
-          <li>The bot is the whole UI: /check, /update all, /status, plus a guided setup wizard</li>
-          <li>Commercial licensing built in — one-click activation, expiry warnings, self-registering installer</li>
-          <li>Failures come with the exact fix, in plain language for non-technical owners</li>
+          <li>Drag-and-drop floor plan of the café's own rooms, or a simple grid</li>
+          <li>One HTML file — no server, no install, nothing to host</li>
+          <li>Refreshes itself from the café's system, and access keys stay on that screen</li>
         </ul>
         <div class="fc-meta">
-          <span class="stack">PowerShell · Node · Postgres</span>
-          <a href="mailto:gerisaranda1@gmail.com?subject=GameUpdater%20demo">Ask for a demo →</a>
+          <span class="stack">HTML · JS · iCafeCloud API</span>
+          <a href="mailto:gerisaranda1@gmail.com?subject=PcBoard%20demo">Ask for a demo →</a>
         </div>
       </div>
       <div class="fc-shot">
-        <div class="tg">
-          <div class="tg-head">
-            <div class="tg-av">G</div>
-            <div><div class="nm2">GameUpdater Bot</div><div class="st">online</div></div>
-          </div>
-          <div class="tg-body">
-            <div class="msg me">/update all</div>
-            <div class="msg bot">🌙 <b>03:00</b> — updating 4 launchers…</div>
-            <div class="msg bot"><span class="ok2">✅ Steam</span> · CS2 → build 14203<br><span class="ok2">✅ Riot</span> · Valorant up to date<br><span class="ok2">✅ Battle.net</span> · OW2 patched</div>
-            <div class="msg bot"><span class="wr">⚠ Epic needs a login</span> — <b>here's exactly what to click.</b></div>
-            <div class="tg-time">03:47 · REPORT SENT</div>
-          </div>
+        <div class="shot-frame">
+          <img src="data:image/jpeg;base64,__B64_PCBOARDSHOT__" alt="PcBoard — floor-plan view with every PC shown as free, in use or off, running on demo data" loading="lazy">
         </div>
       </div>
     </article>
@@ -686,9 +710,9 @@
           <span class="play-badge"><span>▶</span></span>
           <span class="vid-note">Watch it in action</span>
         </a>
-        <span class="mtag">UI theme · Sold — running in cafés</span>
+        <span class="mtag">UI theme · Free for every café</span>
         <h3>Gold Theme</h3>
-        <p>Full reskin of the gaming-café PC menu — live balance, shop, offers and a running-games dock. Layered over the stock client so vendor updates can't break it.</p>
+        <p>Full reskin of the gaming-café PC menu — live balance, shop, offers and a running-games dock. Layered over the stock client and kept working through vendor updates.</p>
       </div>
       <div class="mini has-media reveal" style="--ac:var(--emerald)">
         <div class="mini-media tos" role="img" aria-label="TransformOS dashboard: today's score ring and stat tiles">
@@ -705,12 +729,13 @@
         <p>A fitness system that removes decisions: it tells you what to eat and when to train, then scores your day in five checkmarks. Bilingual from the database up.</p>
       </div>
       <div class="mini has-media reveal" style="--ac:var(--cyan)">
-        <div class="mini-media">
+        <a class="mini-media" href="https://ariahvac.al" target="_blank" rel="noopener" aria-label="Open ariahvac.al">
           <img src="data:image/jpeg;base64,__B64_ARIASHOT__" alt="Aria HVAC — real homepage with animated AC unit hero" loading="lazy">
-        </div>
-        <span class="mtag">Marketing site · Sold — client project</span>
+        </a>
+        <span class="mtag">Marketing site · Live — client project</span>
         <h3>Aria HVAC</h3>
-        <p>Premium dark brochure site for a commercial AC &amp; VRF contractor — animated hero, scroll-driven process section, WhatsApp-first contact.</p>
+        <p>Two-language site for an AC &amp; VRF contractor — animated hero, scroll-driven process, real job-site gallery, SEO landing pages and a contact form that lands in their inbox.</p>
+        <a class="mini-link" href="https://ariahvac.al" target="_blank" rel="noopener">ariahvac.al ↗</a>
       </div>
       <div class="mini has-media reveal" style="--ac:var(--violet)">
         <div class="mini-media">
@@ -731,7 +756,7 @@
       <div class="svc reveal" style="--ac:var(--cyan);--ac-soft:rgba(76,195,255,.13)">
         <div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M7 14l3-4 2.5 3 2-2.5L18 14"/><path d="M9 21h6"/></svg></div>
         <h3>Dashboards &amp; admin panels</h3>
-        <p>Revenue, live maps, alerts, reports — the whole business on one screen, watching itself while you sleep.</p>
+        <p>Revenue, live maps, alerts, TV wall boards — the whole business on one screen, watching itself while you sleep.</p>
       </div>
       <div class="svc reveal" style="--ac:var(--emerald);--ac-soft:rgba(45,212,160,.13)">
         <div class="ic"><svg viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg></div>
@@ -758,7 +783,7 @@
       <div class="pr reveal"><b>You own everything</b><span>Code, data, accounts — handed over and documented. No lock-in.</span></div>
       <div class="pr reveal"><b>Built for real conditions</b><span>Bad Wi-Fi, old PCs, non-technical staff — my software assumes all three.</span></div>
       <div class="pr reveal"><b>Cheap to run</b><span>Most of my products cost a few euros a month to host. Some cost nothing.</span></div>
-      <div class="pr reveal"><b>Shipped, then maintained</b><span>Launch is the start — the four live products above are the proof.</span></div>
+      <div class="pr reveal"><b>Shipped, then maintained</b><span>Launch is the start — the five live products above are the proof.</span></div>
     </div>
   </section>
 
@@ -786,7 +811,7 @@
       <div class="step reveal">
         <span class="sno">04</span>
         <b>Launch — and stay launched</b>
-        <span>I deploy it, hand you the keys, and keep it running. The 4 live products above are proof.</span>
+        <span>I deploy it, hand you the keys, and keep it running. The 5 live products above are proof.</span>
       </div>
     </div>
   </section>
@@ -803,9 +828,11 @@
   <footer>
     <span>GERIBUILD · REMOTE, WORLDWIDE</span>
     <span>
+      <a href="https://gamesupdater.com" target="_blank" rel="noopener">GAMESUPDATER</a> ·
       <a href="https://www.portofoli.al" target="_blank" rel="noopener">PORTOFOLI</a> ·
       <a href="https://mekaniku-lovat.vercel.app" target="_blank" rel="noopener">MEKANIKU</a> ·
-      <a href="https://dashboard-ws99.onrender.com" target="_blank" rel="noopener">CAFÉ OPS</a>
+      <a href="https://dashboard-ws99.onrender.com" target="_blank" rel="noopener">CAFÉ OPS</a> ·
+      <a href="https://ariahvac.al" target="_blank" rel="noopener">ARIA HVAC</a>
     </span>
     <span>ALL WORK BY REQUEST · <span id="yr">2026</span></span>
   </footer>
@@ -824,12 +851,13 @@
   // count-up stats
   function countUp(el) {
     var target = parseInt(el.getAttribute('data-count'), 10);
-    if (reduced) { el.textContent = target; return; }
+    var suffix = el.getAttribute('data-suffix') || '';
+    if (reduced) { el.textContent = target + suffix; return; }
     var t0 = null, dur = 900;
     function tick(t) {
       if (!t0) t0 = t;
       var p = Math.min((t - t0) / dur, 1);
-      el.textContent = Math.round(target * (1 - Math.pow(1 - p, 3)));
+      el.textContent = Math.round(target * (1 - Math.pow(1 - p, 3))) + suffix;
       if (p < 1) requestAnimationFrame(tick);
     }
     requestAnimationFrame(tick);
